@@ -9,9 +9,11 @@ m = KeplerGl()
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/',  methods=['GET'])
 def index():
     return m._repr_html_()
     
 if __name__ == '__main__':
-    app.run(debug=True, port=8080, host='0.0.0.0')
+    app.run(debug=True, 
+            port=8080, 
+            host='0.0.0.0')
