@@ -319,7 +319,7 @@ app = Flask(__name__)
 
 @app.route('/',  methods=['GET'])
 def index():
-    return m._repr_html_(data = {'wildlife':data}, config=config)
+    return m._repr_html_(data = {'Great Whales':data}, config=config)
     
 if __name__ == '__main__':
     app.run(debug=True, 
