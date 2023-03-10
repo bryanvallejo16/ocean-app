@@ -8,7 +8,7 @@ data = gpd.read_file('data/azores_whales_records.gpkg', driver='GPKG')
 data['timestamp'] = data['timestamp'].astype(str)
 
 # fetch
-data = data.loc[data['wild_id'].isin([ 'wt-72315722'])] # 'wt-72315732',
+data = data.loc[data['wild_id'].isin(['wt-72315732', 'wt-72315722'])]
 
 
 config = {
